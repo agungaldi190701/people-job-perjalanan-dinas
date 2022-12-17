@@ -1,0 +1,7 @@
+- install laragon/xampp di laptop/pc anda
+- install composer (kalau belum punya)
+- buat database baru , dan import file sql yang ada didalam project
+- sesuaikan nama database , di file .env
+- buka cmd/git bash dan arah kan kedalam folder project laravel
+- jalankan project laravel menggunakan perintah di cmd/git bash
+- ketikan " php artisan serve " 

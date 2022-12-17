@@ -1,0 +1,24 @@
+
+ADMIN:
+- CRUD anggota 90%
+	- password belum bisa hash
+
+KETUA: 
+- CRUD kegiatan 100%
+- Ubah datanya sendiri {PROCCESS}
+
+ANGGOTA : 
+- Melihat semua Kegiatan {PROCCESS}
+- Ubah Datanya sendiri {PROCCESS}
+		
+
+
++======================================+
+Tampilan : 
+- Dashboard 50%
+- Admin -> menu Daftar Anggota 100%
+- Ketua -> menu Daftar Kegiatan 100%
+- Ketua -> menu Edit Profile 100%
+- Anggota -> menu Edit Profile 100%
+- Anggota -> menu Melihat Kegiatan
+- Login 
