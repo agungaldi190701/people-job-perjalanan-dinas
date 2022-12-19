@@ -166,7 +166,7 @@ class userController extends Controller
             'jenis_kelamin' => $request->jeniskelamin,
             'jabatan' => $request->jabatan,
             'username' => $request->username,
-            'password' => $request->password,
+            'password' => bcrypt($request->password),
             'nohp' => $request->nohp,
             'foto' => $nama_file,
         ]);
@@ -208,7 +208,7 @@ class userController extends Controller
 
         $this->validate($request, [
 
-            'nip' => 'required',
+            // 'nip' => 'required',
             'nama' => 'required',
             'jenis_kelamin' => 'required',
             'jabatan' => 'required',
@@ -239,10 +239,10 @@ class userController extends Controller
             'jenis_kelamin' => $request->jenis_kelamin,
             'jabatan' => $request->jabatan,
             'username' => $request->username,
-            'password' => $request->password,
+            'password' => bcrypt($request->password),
             'nohp' => $request->nohp,
             'foto' => $nama_file,
         ]);
-        return redirect('/anggota')->with(['success' => 'Data Berhasil Diubah']);
+        return back()->with(['success' => 'Data Berhasil Diubah']);
     }
 }

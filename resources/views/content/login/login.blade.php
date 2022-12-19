@@ -122,6 +122,11 @@
         toastr.success(`{{ session('success') }}`);
     </script>
 @endif
+@if (session()->has('loginErorr'))
+    <script>
+        toastr.error(`{{ session('loginErorr') }}`);
+    </script>
+@endif
 @if (count($errors) > 0)
     <script>
         toastr.error(`{{ $errors->first() }}`);
