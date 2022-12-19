@@ -73,7 +73,7 @@
                         </div>
                         <div class="col-md-6">
                             <div class="form-floating">
-                                <input type="time" class="form-control" id="jam" name="jam"
+                                <input type="text" class="form-control" id="jam" name="jam"
                                     value="{{ $r->jam }}">
                                 <label for="jam">Jam Kegiatan</label>
                             </div>
@@ -90,7 +90,13 @@
                                 <label for="status">Piih status ----</label>
                             </div>
                         </div>
-
+                        <div class="col-md-12">
+                            <div class="form-floating">
+                                <input type="text" class="form-control" id="lokasi" name="lokasi"
+                                    value="{{ $r->lokasi }}">
+                                <label for="lokasi">Lokasi Kegiatan</label>
+                            </div>
+                        </div>
                         <input type="hidden" class="form-control" id="id" name="id"
                             value="{{ $r->id }}">
 

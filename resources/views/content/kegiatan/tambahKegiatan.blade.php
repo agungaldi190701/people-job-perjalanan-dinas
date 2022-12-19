@@ -86,7 +86,13 @@
                             <label for="status">Piih status ----</label>
                         </div>
                     </div>
-
+                    <div class="col-md-12">
+                        <div class="form-floating">
+                            <input type="text" class="form-control" id="lokasi" placeholder="Your lokasi"
+                                name="lokasi">
+                            <label for="lokasi">Lokasi Kegiatan</label>
+                        </div>
+                    </div>
 
 
                     <div class="col-6">

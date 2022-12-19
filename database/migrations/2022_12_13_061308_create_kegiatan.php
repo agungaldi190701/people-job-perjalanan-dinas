@@ -21,8 +21,9 @@ return new class extends Migration
             $table->string('jenis_kegiatan');
             $table->date('tanggal');
             $table->string('jam');
-            
+
             $table->string('status');
+            $table->string('lokasi');
 
             $table->softDeletes();
             $table->timestamps();

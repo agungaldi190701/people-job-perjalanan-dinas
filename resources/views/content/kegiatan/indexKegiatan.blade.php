@@ -51,6 +51,7 @@
                                 <th>Jenis Kegiatan</th>
                                 <th>Tanggal Kegiatan</th>
                                 <th>Jam Kegiatan</th>
+                                <th>Lokasi</th>
                                 <th>Status</th>
 
                             </tr>
@@ -68,6 +69,7 @@
                                     <td>{{ $r->jenis_kegiatan }}</td>
                                     <td>{{ Carbon\Carbon::parse($r->tanggal)->isoFormat('D MMMM Y') }}</td>
                                     <td>{{ $r->jam }}</td>
+                                    <td>{{ $r->lokasi }}</td>
                                     <td>
                                         <span
                                             class="badge rounded-pill {{ $r->status === 'Akan Datang' ? 'bg-success' : 'bg-danger' }} ">{{ $r->status }}

@@ -50,6 +50,7 @@ class kegiatanController extends Controller
             'tanggal' => 'required',
             'jam' => 'required',
             'status' => 'required',
+            'lokasi' => 'required',
 
         ], $pesan);
 
@@ -67,6 +68,7 @@ class kegiatanController extends Controller
                 'tanggal' => $request->tanggal,
                 'jam' => $request->jam,
                 'status' => $request->status,
+                'lokasi' => $request->lokasi,
             ]);
         } else {
             kegiatanModel::create([
@@ -77,6 +79,8 @@ class kegiatanController extends Controller
                 'tanggal' => $request->tanggal,
                 'jam' => $request->jam,
                 'status' => $request->status,
+                'lokasi' => $request->lokasi,
+
             ]);
         }
 
@@ -133,6 +137,7 @@ class kegiatanController extends Controller
             'tanggal' => 'required',
             'jam' => 'required',
             'status' => 'required',
+            'lokasi' => 'required',
 
         ], $pesan);
 
@@ -150,6 +155,7 @@ class kegiatanController extends Controller
                 'tanggal' => $request->tanggal,
                 'jam' => $request->jam,
                 'status' => $request->status,
+                'lokasi' => $request->lokasi,
             ]);
         } else {
             kegiatanModel::where('id', $request->id)->update([
@@ -160,6 +166,7 @@ class kegiatanController extends Controller
                 'tanggal' => $request->tanggal,
                 'jam' => $request->jam,
                 'status' => $request->status,
+                'lokasi' => $request->lokasi,
             ]);
         }
 
